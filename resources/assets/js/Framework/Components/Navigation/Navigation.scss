@@ -1,0 +1,41 @@
+
+@import '~/app';
+
+.navigation {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  &-item {
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: rgba($color-black-base, .65);
+    white-space: nowrap;
+    .anticon {
+      min-width: 14px;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      background: $color-blue-base;
+      opacity: 0;
+      transition: opacity .3s ease;
+    }
+    &:hover,
+    &.is-active {
+      color: $color-blue-base;
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+

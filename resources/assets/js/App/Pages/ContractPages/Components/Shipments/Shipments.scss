@@ -1,0 +1,114 @@
+@import '~/app';
+
+.shipments {
+    margin-bottom: 25px;
+
+    .shipment {
+      display: none;
+    }
+
+    .shipments-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .text-left {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .text-right {
+        text-align: right;
+        padding-right: 60px;
+      }
+      .title {
+        margin-bottom: 5px;
+      }
+
+      .total {
+        &.positive {
+          color: $color-green-base;
+          opacity: 1;
+        }
+
+        &.negative {
+          color: $color-red-base;
+          opacity: 1;
+        }
+      }
+
+      .shipments-left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+          color: $color-black-base;
+          opacity: 0.65;
+        }
+
+        .shipment-name {
+          width: 125px;
+        }
+
+        .shipment-date {
+          margin: 0 50px;
+        }
+      }
+
+      .shipments-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        p {
+          color: $color-black-base;
+          opacity: 0.65;
+        }
+
+        .total-price {
+          margin-left: 20px;
+        }
+
+        .actions {
+          display: flex;
+          align-items: center;
+          flex-shrink: 0;
+          .finished {
+            height: 23px;
+            margin-right: 10px;
+            padding: 0 7px;
+            line-height: 20px;
+
+            color: $color-green-base;
+            border: 1px solid #B7EB8F;
+            border-radius: 4px;
+            background-color: #F6FFED;
+
+            span {
+              font-size: 12px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .shipments {
+    .ant-card-head {
+      border: none;
+    }
+
+    .ant-table {
+      .containers {
+        width: 52%;
+        white-space: normal;
+      }
+
+      .column-actions {
+        text-align: right;
+      }
+    }
+  }

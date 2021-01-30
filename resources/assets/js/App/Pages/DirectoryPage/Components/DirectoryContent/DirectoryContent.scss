@@ -1,0 +1,13 @@
+.directory-content {
+    width: 100%;
+    padding: 0 25px;
+    .directory-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 4px 10px;
+    }
+    .directory-title {
+        font-size: 20px;
+    }
+}

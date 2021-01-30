@@ -1,0 +1,1 @@
+export const SET_ANALYTICS = 'SET_ANALYTICS';

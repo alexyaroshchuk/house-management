@@ -1,0 +1,13 @@
+.change-shipment-status-modal {
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .ant-modal-body {
+    min-height: 100px;
+    display: flex;
+  }
+}

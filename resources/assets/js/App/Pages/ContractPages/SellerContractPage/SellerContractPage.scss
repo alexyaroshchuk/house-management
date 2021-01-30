@@ -1,0 +1,38 @@
+@import '~/app';
+
+.contract-page {
+  width: 100%;
+  .contract-page-content {
+    padding: 0 25px;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .ant-table-wrapper {
+      width: 49%;
+    }
+  }
+}
+
+.sales-manager-contract {
+  .dashlets {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    .weights {
+      width: 74%;
+    }
+
+    .free-commodities {
+      width: 24%;
+
+      .commodities {
+        font-size: 38px;
+        line-height: 26px;
+        color: $color-blue-base;
+      }
+    }
+  }
+}

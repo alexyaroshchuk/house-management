@@ -1,0 +1,19 @@
+.edit-income-modal {
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-height: 172px;
+  }
+
+  #edit-income-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .ant-row {
+      width: 48%;
+    }
+  }
+}

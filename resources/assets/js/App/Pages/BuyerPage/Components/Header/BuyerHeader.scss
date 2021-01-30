@@ -1,0 +1,48 @@
+@import '~/app';
+
+.buyer-page {
+    .ant-page-header {
+        .ant-page-header-content {
+            padding-top: 20px;
+        }
+        .left {
+            width: 65%;
+
+            .ant-descriptions-item-label,
+            .ant-descriptions-item-content {
+                font-size: 16px;
+            }
+        }
+
+        .right {
+            width: 35%;
+            .ant-descriptions-item {
+                text-align:  right;
+                padding-bottom: 6px;
+            }
+
+            .ant-descriptions-item-label {
+                font-size: 16px;
+                opacity: 0.65;
+                &::after {
+                    content: none;
+                }
+            }
+            .invest,
+            .profit {
+                font-size: 24px;
+                color: $color-black-base;
+            }
+
+            .profit {
+                &.positive {
+                    color: $color-green-base;
+                }
+
+                &.negative {
+                    color: $color-red-base;
+                }
+            }
+        }
+    }
+}

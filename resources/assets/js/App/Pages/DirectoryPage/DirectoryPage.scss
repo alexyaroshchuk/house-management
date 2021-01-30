@@ -1,0 +1,25 @@
+@import '~/app';
+
+.directory-page {
+  width: 100%;
+  margin-top: 25px;
+  
+  .directory-wrapper {
+    // height: 100%;
+    padding-top: 25px;
+    background: $color-white-base;
+    // @include container();
+    display: flex;
+    flex: 1;
+    margin: 0 25px;
+    .wrapper {
+      display: flex;
+    }
+
+    .ant-table-wrapper {
+    }
+  }
+  .ant-layout-sider-children  .ant-menu {
+    height: 100%;
+  }
+}

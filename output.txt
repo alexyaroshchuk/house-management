@@ -1,0 +1,127 @@
+default -> 12.13.0 (-> v12.13.0 *)
+
+> husky@4.2.5 install /var/www/crown/node_modules/husky
+> node husky install
+
+husky > Setting up git hooks
+Cannot read property 'toString' of null
+husky > Failed to install
+
+> core-js@2.6.11 postinstall /var/www/crown/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js-pure@3.6.5 postinstall /var/www/crown/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> husky@4.2.5 postinstall /var/www/crown/node_modules/husky
+> opencollective-postinstall || exit 0
+
+[96m[1mThank you for using husky![96m[1m
+[0m[96mIf you rely on this package, please consider supporting our open collective:[22m[39m
+> [94mhttps://opencollective.com/husky/donate[0m
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 319 packages from 196 contributors, removed 3 packages, updated 2 packages and audited 20684 packages in 87.006s
+found 0 vulnerabilities
+
+default -> 12.13.0 (-> v12.13.0 *)
+npm WARN rc-picker@1.4.9 requires a peer of dayjs@^1.8.18 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 20684 packages in 23.445s
+found 0 vulnerabilities
+
+default -> 12.13.0 (-> v12.13.0 *)
+default -> 12.13.0 (-> v12.13.0 *)
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 113 packages from 76 contributors and audited 1577 packages in 55.641s
+found 2 low severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+default -> 12.13.0 (-> v12.13.0 *)
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 67 packages from 28 contributors, removed 11 packages, updated 30 packages and audited 1634 packages in 72.182s
+found 3 vulnerabilities (2 low, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+default -> 12.13.0 (-> v12.13.0 *)
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 1634 packages in 23.521s
+found 3 vulnerabilities (2 low, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+default -> 12.13.0 (-> v12.13.0 *)
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 1638 packages in 24.768s
+found 650 vulnerabilities (649 low, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+default -> 12.13.0 (-> v12.13.0 *)
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 1638 packages in 24.556s
+found 650 vulnerabilities (649 low, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+default -> 12.13.0 (-> v12.13.0 *)
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 1638 packages in 21.701s
+found 650 vulnerabilities (649 low, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+default -> 12.13.0 (-> v12.13.0 *)
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 1638 packages in 22.989s
+found 650 vulnerabilities (649 low, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+default -> 12.13.0 (-> v12.13.0 *)
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 1638 packages in 29.716s
+found 654 vulnerabilities (649 low, 5 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+default -> 12.13.0 (-> v12.13.0 *)
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 1638 packages in 32.552s
+found 654 vulnerabilities (649 low, 5 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+default -> 12.13.0 (-> v12.13.0 *)
+npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 3 packages from 8 contributors and audited 1572 packages in 21.26s
+found 659 vulnerabilities (651 low, 8 high)
+  run `npm audit fix` to fix them, or `npm audit` for details

@@ -1,0 +1,23 @@
+.edit-main-contract-modal {
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-height: 86px;
+  }
+
+  #edit-main-contract-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .ant-row {
+      width: 48%;
+
+      &.contracts {
+        padding: 0;
+      }
+    }
+  }
+}

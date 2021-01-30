@@ -1,0 +1,29 @@
+.edit-expense-modal {
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-height: 234px;
+  }
+
+  #edit-expense-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .ant-radio-group {
+      .ant-radio-wrapper-disabled {
+        display: none;
+      }
+    }
+  }
+
+  .description,
+  .date,
+  .amount,
+  .payment-type,
+  .shipment {
+    width: 48%;
+  }
+}

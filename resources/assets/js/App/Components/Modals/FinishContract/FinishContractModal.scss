@@ -1,0 +1,22 @@
+
+.finish-contract-modal {
+  .loader {
+    min-height: 172px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ant-modal-body {
+    min-height: 100px;
+  }
+  #finish-contract-form {
+    min-height: 172px;
+    .ant-input-affix-wrapper-disabled {
+      background: transparent;
+      color: initial;
+    }
+    .ant-input-disabled {
+      color: initial;
+    }
+  }
+}

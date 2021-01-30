@@ -1,0 +1,19 @@
+.edit-payment-modal {
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-height: 234px;
+  }
+
+  #edit-payment-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .ant-row {
+      width: 48%;
+    }
+  }
+}

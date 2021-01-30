@@ -1,0 +1,27 @@
+.loader-fullscreen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.3);
+    z-index: 1;
+}
+
+.loader {
+    &.white {
+        background: white;
+        &.fill {
+            background: rgba(white, .3);
+        }
+    }
+    &.dark {
+        background: black;
+        &.fill {
+            background: rgba(black, .3);
+        }
+    }
+}

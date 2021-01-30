@@ -1,0 +1,11 @@
+@import '~/app';
+
+.badge {
+  cursor: pointer;
+
+  .ant-badge {    
+    .ant-badge-count {
+      background-color: $color-red-base;
+    }
+  }
+}

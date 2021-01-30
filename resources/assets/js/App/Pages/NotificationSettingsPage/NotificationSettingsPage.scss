@@ -1,0 +1,40 @@
+@import 'resources/assets/styles/app/mixins';
+@import 'resources/assets/styles/app/vars';
+
+.notification-settings-page {
+  @include container();
+  margin-top: 25px;
+
+  .container {
+    padding: 25px;
+    background-color: $color-white-base;
+  }
+
+  .default-settings {
+    margin-bottom: 35px;
+  
+    .setting {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10px;
+      border-bottom: 1px solid $color-gray-base;
+      
+      .setting-description {
+        color: $color-black-base;
+        opacity: 0.45;
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: $color-black-base;
+    opacity: 0.85;
+  }
+
+  .setting-title {
+    margin-bottom: 5px;
+  }
+}

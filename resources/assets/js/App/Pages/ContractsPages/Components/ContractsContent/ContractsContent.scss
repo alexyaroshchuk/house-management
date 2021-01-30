@@ -1,0 +1,23 @@
+@import 'resources/assets/styles/app/mixins';
+
+.contracts {
+  @include container();
+
+  .ant-card-extra {
+    display: flex;
+    align-items: center;
+
+    .ant-input-search {
+      width: 225px;
+      margin-left: 15px;
+    }
+
+    .ant-dropdown-link {
+      margin-right: 15px;
+    }
+  }
+
+  .commodities {
+    width: 200px;
+  }
+}

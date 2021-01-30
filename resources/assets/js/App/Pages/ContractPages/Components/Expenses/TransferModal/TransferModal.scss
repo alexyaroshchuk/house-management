@@ -1,0 +1,19 @@
+.transfer-modal {
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-height: 148px;
+  }
+
+  #transfer-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .ant-row {
+      width: 48%;
+    }
+  }
+}

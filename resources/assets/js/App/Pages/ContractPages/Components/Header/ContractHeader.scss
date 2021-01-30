@@ -1,0 +1,175 @@
+@import '~/app';
+
+.ant-page-header {
+    .ant-page-header-content {
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+  .left {
+    width: 68%;
+  
+    .ant-descriptions-item-label,
+    .ant-descriptions-item-content {
+      font-size: 16px;
+    }
+    .ant-descriptions-item {
+      padding-right: 20px;
+    }
+  }
+  
+  .right {
+    width: 32%;
+    flex-shrink: 0;
+    .ant-descriptions-item {
+      width: 50%;
+      text-align: right;
+      padding-bottom: 6px;
+      padding-left: 20px;
+    }
+  
+    .ant-descriptions-item-label {
+      font-size: 16px;
+      opacity: 0.65;
+      &::after {
+        content: none;
+      }
+    }
+    .invest,
+    .profit {
+      font-size: 24px;
+      color: $color-black-base;
+    }
+  
+    .profit {
+      &.positive {
+        color: $color-green-base;
+      }
+  
+      &.negative {
+        color: $color-red-base;
+      }
+    }
+  }
+
+
+  .shipments {
+    margin-bottom: 25px;
+
+    .shipments-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .title {
+        margin-bottom: 5px;
+      }
+
+      .shipments-left {
+        display: flex;
+        flex-direction: column;
+        span {
+          color: $color-black-base;
+          opacity: 0.65;
+        }
+      }
+
+      .shipments-right {
+        display: flex;
+        align-items: center;
+        
+        p {
+          color: $color-black-base;
+          opacity: 0.65;
+        }
+
+        .total-price {
+          margin: 0 100px;
+        }
+
+        .quantity,
+        .payment,
+        .date,
+        .from-buyer,
+        .for-seller {
+          margin-right: 100px;
+        }
+
+        .actions {
+          .finished {
+            height: 23px;
+            padding: 0 7px;
+            line-height: 20px;
+
+            color: $color-green-base;
+            border: 1px solid #B7EB8F;
+            border-radius: 4px;
+            background-color: #F6FFED;
+
+            span {
+              font-size: 12px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .expenses {
+    .expenses-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .expenses-left,
+      .expenses-right {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          color: $color-black-base;
+          opacity: 0.65;
+
+          &.title {
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+      .expenses-right {
+        margin-right: 260px;
+      }
+    }
+
+    .ant-collapse-content-box {
+      padding: 0;
+    }
+  }
+
+  .shipments,
+  .expenses {
+    .ant-card-head {
+      border: none;
+    }
+  }
+
+  .management {
+    .ant-card-body {
+      padding: 0;
+      padding-top: 15px;
+    }
+  }
+
+  .price {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  &.seller-contract-header {
+    .left {
+      .ant-descriptions-row {
+        display: flex;
+      }
+    }
+  }
+}

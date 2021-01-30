@@ -1,0 +1,24 @@
+.create-user-modal {
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-height: 258px;
+  }
+
+  .ant-modal-body {
+    display: flex;
+    min-height: 100px;
+    #create-user-form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      min-height: 258px;
+      .ant-row {
+        width: 49%;
+      }
+    }
+  }
+}

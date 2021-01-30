@@ -1,0 +1,72 @@
+@import '~/app';
+
+.notifications-drawer {
+    .ant-drawer-header {
+        .ant-drawer-title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+
+    .ant-list {
+        .ant-list-header {
+            padding: 12px 24px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .ant-list-items {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .ant-list-item {
+            display: flex;
+            flex-direction: column;
+            padding: 12px 24px;
+        }
+
+        .ant-avatar {
+            background: none;
+            width: 42px;
+            height: 42px;
+            border-radius: 0;
+
+            svg {
+                width: 42px;
+                height: 42px;
+            }
+        }
+
+        .ant-list-item-meta {
+            margin-bottom: 12px;
+        }
+
+        .ant-list-item-meta-title {
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 300;
+            color: $color-black-base;
+            opacity: 0.65;
+        }
+
+        .ant-list-item-extra {
+            margin-left: 58px;
+
+            .extra-item {
+                font-size: 12px;
+                line-height: 20px;
+                color: $color-black-base;
+                opacity: 0.45;
+            }
+        }
+    }
+
+    .ant-drawer-footer {
+        button {
+            &:last-child {
+                margin-left: 15px;
+            }
+        }
+    }
+}

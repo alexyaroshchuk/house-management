@@ -1,0 +1,36 @@
+@import '~/app';
+
+.role-settings-page {
+  width: 100%;
+  margin-top: 25px;
+
+  .container {
+    @include container();
+  }
+
+  .ant-table-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .ant-card-head {
+    border: none;
+
+    .ant-card-head-title {
+      padding: 24px 0;
+    }
+  }
+
+  .ant-card-body {
+    padding-top: 0;
+  }
+
+  .ant-table-content {
+    .column-actions {
+      text-align: center;
+    }
+  }
+
+  .add-row {
+    margin-top: 15px;
+  }
+}
