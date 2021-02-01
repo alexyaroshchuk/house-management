@@ -25,6 +25,7 @@ class CreateApartmentsTable extends Migration
             $table->integer('first_payment')->default(0);
             $table->integer('count_payments')->nullable();
             $table->string('contract_number')->nullable();
+            $table->string('correct_payment')->default(0);
 
             $table->timestamps();
         });

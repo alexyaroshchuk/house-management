@@ -49,6 +49,8 @@ class ApartmentService extends BaseService
         ];
 
         $space = parent::getOne($id, $params);
+//        $space->payments()->orderBy('id');
+//        $space->comments()->orderBy('id');
         $this->getAllPaymentForApartment($space);
 
         return $space;

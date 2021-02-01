@@ -11,8 +11,10 @@
                 <tr>
                     <th>Текст</th>
                     <th>Рекомендованный платеж</th>
+                    <th>Фактический платеж в гривне</th>
+                    <th>Валюта</th>
                     <th>Фактический платеж</th>
-                    <th>Рекомендованая дата</th>
+                    <th>Дата</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -22,6 +24,12 @@
                         </td>
                         <td>
                             {{ $model->recommend_payment }}
+                        </td>
+                        <td>
+                            {{ $model->fact_payment_in_hrn }}
+                        </td>
+                        <td>
+                            {{ $model->currency }}
                         </td>
                         <td>
                             {{ $model->fact_payment }}

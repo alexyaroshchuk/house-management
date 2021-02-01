@@ -9,6 +9,7 @@ class ApartmentRequest extends ApiRequest
             'contract_number' => ['nullable', 'string'],
             'price'           => ['nullable', 'string'],
             'first_payment'   => ['nullable', 'integer'],
+            'correct_payment' => ['nullable', 'integer'],
             'count_payments'  => ['nullable', 'integer'],
             'floor'           => ['nullable', 'integer'],
             'space'           => ['nullable', 'numeric'],

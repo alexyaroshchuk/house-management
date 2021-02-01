@@ -18,6 +18,7 @@
                         <th>Этаж</th>
                         <th>Номер контракта</th>
                         <th>Первый платеж</th>
+                        <th>Корректирующий платеж</th>
                         <th>Сумма платежей</th>
                         <th>Кол-во платежей</th>
                         <th>Процент выплаты</th>
@@ -40,6 +41,9 @@
                         </td>
                         <td>
                             {{ $model->first_payment }}
+                        </td>
+                        <td>
+                            {{ $model->correct_payment }}
                         </td>
                         <td>
                             {{ $model->totalPayment }}
@@ -131,8 +135,10 @@
                 <thead>
                 <tr>
                     <th>№</th>
-                    <th>Рекомендованый платеж</th>
+                    <th>Рекомендованый платеж в гривне</th>
                     <th>Фактический платеж</th>
+                    <th>Валюта</th>
+                    <th>Фактический платеж в гривне</th>
                     <th>Источник</th>
                     <th>Дата</th>
                     <th>Действие</th>
@@ -149,6 +155,12 @@
                         </td>
                         <td>
                             {{ $payment->fact_payment }}
+                        </td>
+                        <td>
+                            {{ $payment->currency }}
+                        </td>
+                        <td>
+                            {{ $payment->fact_payment_in_hrn }}
                         </td>
                         <td>
                             {{ $payment->source }}

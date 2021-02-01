@@ -60,6 +60,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                    @if(isset($models['parkings']['B1']))
                         @foreach($models['parkings']['B1'] as $index => $model)
                             @if($index%11 == 0)
                                 <tr>
@@ -84,14 +85,16 @@
                                         </td>
                             @endif
                         @endforeach
+                    @endif
                     </tbody>
                     <thead>
-                    <tr>
-                        <th bgcolor="gray">B2</th>
-                    </tr>
+                        <tr>
+                            <th bgcolor="gray">B2</th>
+                        </tr>
                     </thead>
                     <tbody>
-                    @foreach($models['parkings']['B2'] as $index => $model)
+                    @if(isset($models['parkings']['B2']))
+                        @foreach($models['parkings']['B2'] as $index => $model)
                         @if($index%11 == 0)
                             <tr>
                                 <td
@@ -115,14 +118,16 @@
                                     </td>
                         @endif
                     @endforeach
+                    @endif
                     </tbody>
                     <thead>
-                    <tr>
-                        <th bgcolor="gray">B3</th>
-                    </tr>
+                        <tr>
+                            <th bgcolor="gray">B3</th>
+                        </tr>
                     </thead>
                     <tbody>
-                    @foreach($models['parkings']['B3'] as $index => $model)
+                    @if(isset($models['parkings']['B3']))
+                        @foreach($models['parkings']['B3'] as $index => $model)
                         @if($index%11 == 0)
                             <tr>
                                 <td
@@ -146,6 +151,7 @@
                                     </td>
                         @endif
                     @endforeach
+                    @endif
                     </tbody>
                 </table>
             </div>

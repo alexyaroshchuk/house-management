@@ -39,6 +39,24 @@
                     @endif
                 </div>
 
+                <div class="form-group {{ $errors->has('fact_payment_in_hrn') ? 'has-error' : '' }}">
+                    <label for="name">Фактическая оплата в грн</label>
+                    <input readonly type="text" id="fact_payment_in_hrn" name="fact_payment_in_hrn" class="form-control" value="{{ old('fact_payment_in_hrn', isset($model) ? $model->fact_payment_in_hrn : '') }}">
+                    @if($errors->has('fact_payment_in_hrn'))
+                        <em class="invalid-feedback">
+                            {{ $errors->first('fact_payment_in_hrn') }}
+                        </em>
+                    @endif
+                </div>
+
+                <div class="form-group {{ $errors->has('currency') ? 'has-error' : '' }}">
+                    <label for="name">Валюта</label>
+                    <select class="form-control selectpicker" name="currency" id="currency">
+                        @foreach(\App\Models\Payment::CURRENCY as $key => $value)
+                            <option value="{{$key}}" @if(isset($model->currency) == $key) selected @endif>{{$value}}</option>
+                        @endforeach
+                    </select>
+                </div>
 
                 <div class="form-group {{ $errors->has('source') ? 'has-error' : '' }}">
                     <label for="name">Источник</label>

@@ -15,13 +15,17 @@ class ApartmentObserver
     public function saving($model)
     {
         if ($model->count_payments && $model->status == Apartment::STATUSES['partially_sold']) {
-            for ($i = 0; $i < $model->count_payments; $i++) {
-                Payment::create([
-                   'date'              => Carbon::now()->addMonths($i),
-                   'recommend_payment' => $model->price / $model->count_payments,
-                   'fact_payment'      => 0,
-                   'apartment_id'      => $model->id,
-                ]);
+            if ($model->count_payments > $model->getOriginal('count_payments')) {
+                for ($i = $model->getOriginal('count_payments'); $i < $model->count_payments; $i++) {
+                    Payment::create([
+                        'date'              => Carbon::now()->addMonths($i),
+                        'recommend_payment' => ($model->price - $model->first_payment) / $model->count_payments,
+                        'fact_payment'      => 0,
+                        'apartment_id'      => $model->id,
+                        'source'            => 'cash',
+                        'currency'          => 'hrn',
+                    ]);
+                }
             }
         }
 

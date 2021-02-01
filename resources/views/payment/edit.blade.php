@@ -11,7 +11,7 @@
                 @csrf
                 @method('PUT')
                 <div class="form-group {{ $errors->has('date') ? 'has-error' : '' }}">
-                    <label for="name">Текст комментария</label>
+                    <label for="name">Дата</label>
                     <input class="date form-control" type="text" id="date" name="date" value="{{ old('date', isset($model) ? $model->date : '') }}">
                     @if($errors->has('date'))
                         <em class="invalid-feedback">
@@ -38,6 +38,25 @@
                             {{ $errors->first('fact_payment') }}
                         </em>
                     @endif
+                </div>
+
+                <div class="form-group {{ $errors->has('fact_payment_in_hrn') ? 'has-error' : '' }}">
+                    <label for="name">Фактическая оплата в грн</label>
+                    <input readonly type="text" id="fact_payment_in_hrn" name="fact_payment_in_hrn" class="form-control" value="{{ old('fact_payment_in_hrn', isset($model) ? $model->fact_payment_in_hrn : '') }}">
+                    @if($errors->has('fact_payment_in_hrn'))
+                        <em class="invalid-feedback">
+                            {{ $errors->first('fact_payment_in_hrn') }}
+                        </em>
+                    @endif
+                </div>
+
+                <div class="form-group {{ $errors->has('currency') ? 'has-error' : '' }}">
+                    <label for="name">Валюта</label>
+                    <select class="form-control selectpicker" name="currency" id="currency">
+                        @foreach(\App\Models\Payment::CURRENCY as $key => $value)
+                            <option value="{{$key}}" @if(isset($model->currency) == $key) selected @endif>{{$value}}</option>
+                        @endforeach
+                    </select>
                 </div>
 
                 <div class="form-group {{ $errors->has('source') ? 'has-error' : '' }}">

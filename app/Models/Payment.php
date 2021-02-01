@@ -20,9 +20,21 @@ class Payment extends Model
         'fact_payment_in_hrn'
     ];
 
+    const PAYMENT_TYPES = [
+        'cash' => 'Наличные',
+        'card' => 'Банковский счет',
+        'kua'  => 'КУА'
+    ];
+
+    const CURRENCY = [
+        'eur'  => 'Евро',
+        'hrn'  => 'Гривна',
+        'usd'  => 'Доллар'
+    ];
+
 
     /**
-     * @param  string  $value
+     * @param  string $value
      * @return string
      */
     public function getSourceAttribute($value)
@@ -30,11 +42,14 @@ class Payment extends Model
         return self::PAYMENT_TYPES[$value];
     }
 
-    const PAYMENT_TYPES = [
-        'cash' => 'Наличные',
-        'card' => 'Банковский счет',
-        'kua'  => 'КУА'
-    ];
+    /**
+     * @param  string $value
+     * @return string
+     */
+    public function getCurrencyAttribute($value)
+    {
+        return self::CURRENCY[$value];
+    }
 
     /**
      * @return BelongsTo

@@ -16,6 +16,7 @@ class Apartment extends Model
         'contract_number',
         'price',
         'first_payment',
+        'correct_payment',
         'floor',
         'space',
         'status',

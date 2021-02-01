@@ -89,7 +89,15 @@
                         </em>
                     @endif
                 </div>
-
+                <div class="form-group {{ $errors->has('correct_payment') ? 'has-error' : '' }}">
+                    <label for="name">Корректирующий платеж</label>
+                    <input type="text" id="correct_payment" name="correct_payment" class="form-control" value="{{ old('correct_payment', isset($model) ? $model->correct_payment : '') }}">
+                    @if($errors->has('correct_payment'))
+                        <em class="invalid-feedback">
+                            {{ $errors->first('correct_payment') }}
+                        </em>
+                    @endif
+                </div>
 
                 <div>
                     <a class="btn btn-xs btn-danger" href="{{route('apartments.index')}}">
