@@ -1,5 +1,0 @@
-export const SET_DASHBOARD = 'SET_DASHBOARD';
-export const SET_PAYMENTS = 'SET_PAYMENTS';
-export const SET_CREDITS = 'SET_CREDITS';
-export const SET_PAGINATION = 'SET_PAGINATION';
-export const RESET_PARAMS = 'RESET_PARAMS';
