@@ -20,6 +20,8 @@ class CreatePaymentsTable extends Migration
             $table->string('fact_payment')->nullable();
             $table->string('source')->nullable();
             $table->unsignedInteger('apartment_id')->nullable();
+            $table->string('currency')->nullable();
+            $table->string('fact_payment_in_hrn')->nullable();
             $table->timestamps();
 
             $table->foreign('apartment_id')->references('id')->on('apartments');

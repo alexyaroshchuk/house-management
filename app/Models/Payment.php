@@ -15,7 +15,9 @@ class Payment extends Model
         'recommend_payment',
         'fact_payment',
         'source',
-        'apartment_id'
+        'apartment_id',
+        'currency',
+        'fact_payment_in_hrn'
     ];
 
 

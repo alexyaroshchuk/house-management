@@ -2,12 +2,14 @@
 
 namespace App\Providers;
 
+use App\Models\Apartment;
 use App\Models\Container;
 use App\Models\Contract;
 use App\Models\Expense;
 use App\Models\Payment;
 use App\Models\SellerContract;
 use App\Models\Shipment;
+use App\Observers\ApartmentObserver;
 use App\Observers\ContainerObserver;
 use App\Observers\ContractObserver;
 use App\Observers\ExpenseObserver;
@@ -35,6 +37,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
+        Apartment::observe(ApartmentObserver::class);
     }
 }
